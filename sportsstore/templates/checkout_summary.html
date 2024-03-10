@@ -1,0 +1,11 @@
+{{ layout "simple_layout.html" }}
+{{ $context := . }}
+
+<div class="text-center m-3">
+    <h2>СПАСИБО!</h2>
+    <p>Спасибо за заказ у нас! #{{ $context.ID }} </p>
+    <p>Уже упаковываем. Доставим как можно скорее!</p>
+    <a class="btn btn-primary" href="{{ $context.TargetUrl }}">
+        Вернуться в магазин
+    </a>
+</div>
